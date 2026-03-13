@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS `mahasiswa` (
+  `id`         INT(11)      NOT NULL AUTO_INCREMENT,
+  `nim`        VARCHAR(20)  NOT NULL,
+  `nama`       VARCHAR(100) NOT NULL,
+  `email`      VARCHAR(100) NOT NULL,
+  `gambar`     VARCHAR(255) DEFAULT NULL,
+  `created_at` TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
